@@ -1,4 +1,4 @@
-(defproject net.clojars.macielti/sinapse "0.1.0-2"
+(defproject net.clojars.macielti/sinapse "0.1.0-4"
 
   :description "Sinapse is an Integrant component to deal with async messaging, when the messages are intent to be
   consumed internal by the same service that produced the messages."
@@ -13,6 +13,7 @@
                  [org.clojure/tools.logging "1.2.4"]
                  [io.pedestal/pedestal.interceptor "0.7.2"]
                  [net.clojars.macielti/common-clj "43.74.74"]
+                 [clj-commons/iapetos "0.1.14"]
                  [integrant "0.13.1"]]
 
   :profiles {:dev {:plugins        [[lein-shell "0.5.0"]
