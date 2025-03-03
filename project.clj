@@ -1,4 +1,4 @@
-(defproject net.clojars.macielti/sinapse "0.1.0-1"
+(defproject net.clojars.macielti/sinapse "0.1.0-2"
 
   :description "Sinapse is an Integrant component to deal with async messaging, when the messages are intent to be
   consumed internal by the same service that produced the messages."

@@ -50,7 +50,7 @@
                     (try
                       (s/validate schema payload)
                       (chain/execute {:payload    payload
-                                      :components components}
+                                      :components (assoc components :sinapse sinapse)}
                                      (conj (or interceptors []) (handler-fn->interceptor handler-fn)))
                       (catch Exception ex
                         (log/error ::error-while-consuming-message :exception ex)
